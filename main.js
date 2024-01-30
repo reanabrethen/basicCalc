@@ -24,20 +24,9 @@ const operators = document.querySelectorAll('.operator')
 
 clear.addEventListener('click', clearDisplay )
 
-// numbers.addEventListener('click', numberPressed)
+// numbers.addEventListener('click', numberPressed)  need to loop through it
 
 
-numbers.forEach(number => {
-    number.addEventListener("click", e => {
-        if (operator === "") { // Read first number if no operator set yet
-            firstNum += e.target.innerText;
-            console.log(firstNum)
-        } else { // Read second number
-            secondNum += e.target.innerText;
-            console.log(secondNum)
-        }
-    });
-});
 
 //FUNCTIONS
 
@@ -49,15 +38,20 @@ function operationPressed(op){
 
 }
 
-// function numberPressed(number){
-//     for(let i = 0; i < number.length; i++){
-//         if(firstNumber === 0){
-//             firstNumber += number[i] 
-//     }else if(secondNumber === 0){
-//         secondNumber += number[i]
-//     }
-// } return number
-// }
+function numberPressed(number){
+
+
+// if operator saved then second number
+
+
+        for(let i = 0; i < number.length; i++){
+        if(firstNumber === ''){  //checking to see if operator exsists
+            firstNumber += number[i] 
+    }else if(secondNumber === ''){ //checking to see if operator exsists
+        secondNumber += number[i]
+    }
+} return number
+}
 
 
 function clearDisplay(){
