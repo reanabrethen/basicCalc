@@ -42,10 +42,10 @@ function numberPressed(number){
 
 
 // if operator saved then second number
-
+let operator = ['+', '-', '/', '*']
 
         for(let i = 0; i < number.length; i++){
-        if(firstNumber === ''){  //checking to see if operator exsists
+        if(firstNumber === '' && operator ){  //checking to see if operator exsists
             firstNumber += number[i] 
     }else if(secondNumber === ''){ //checking to see if operator exsists
         secondNumber += number[i]
