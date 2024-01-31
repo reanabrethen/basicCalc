@@ -22,7 +22,7 @@ input[type="button"] {
     border-radius: 10px;
 }
 
-input[type="text"] {
+#result {
     padding: 20px 30px;
     background-color: burlywood;
     color: white;
