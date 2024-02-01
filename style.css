@@ -36,3 +36,23 @@ input[type="button"] {
     
 }
 
+#toggle {
+    margin-top: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    border: 2px solid black;
+    text-align: center;
+    max-width: 200px;
+}
+
+
+
+.dark-mode {
+    background-color: black;
+    color: white;
+}
+
+.light-mode {
+    background-color: white;
+    color: black;
+}
