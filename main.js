@@ -32,12 +32,11 @@ for(let op of operators){
     op.addEventListener('click', operationPressed)}
     
 
-    equal.addEventListener('click', calcResult)
+ equal.addEventListener('click', calcResult)
+
+ decimal.addEventListener('click', decimalDisplay)
 
 // display.addEventListener('click', updateScreen)
-
-
-
 
 
 
@@ -85,9 +84,10 @@ function updateScreen(){
 }
 
 
-
-
-
 function calcResult(){
     display.innerText = eval(display.innerText)
     }
+
+function decimalDisplay(){
+    display.innerText = parseFloat(display.innerText)
+}
