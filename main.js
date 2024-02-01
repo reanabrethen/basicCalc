@@ -56,26 +56,9 @@ for(let op of operators){
 
 //FUNCTIONS
 
-function calcResult(){
-//switch operation? 
-//eval function?
-// let operators = ''
-//    if(operators === + ){
-//     eval(a + b)
-// }else if(operators = '-'){
-//     eval(a-b)
-// }else if(operators = '/'){
-//     eval(a/b)
-// }else if(operators = '*'){
-//     eval(a*b)
-// } updateScreen()
-}
-
-
 function operationPressed(event){
         operation = event.target.value
     }
-
 
 
 function numberPressed(event){
@@ -106,3 +89,63 @@ function updateScreen(){
        
             display.innerText = firstNumber + operation + secondNumber
 }
+
+
+
+// function add(firstNumber, secondNumber){
+//     return firstNumber + secondNumber
+// }
+
+// function subtract(firstNumber, secondNumber){
+//     return firstNumber - secondNumber
+// }
+
+// function multiply(firstNumber, secondNumber){
+//     return firstNumber * secondNumber
+// }
+
+// function divide(firstNumber, secondNumber){
+//     if(secondNumber === 0){
+//         return undefined
+//     }else{
+//         firstNumber / secondNumber
+//     }
+// }
+
+function calcResult(numberPressed){
+    return eval(numberPressed)
+    
+    
+    
+    
+    // let a = firstNumber
+    // let b = secondNumber
+    // if(a, b){
+    //     eval('a + b')
+    // }else
+        
+    
+    
+    
+    
+    
+    
+    
+    //  let a = firstNumber
+    //  let b = secondNumber
+
+    //  let add = 'a + b'
+    //  let result = eval(add)
+
+
+
+//   if(operators === '+'){
+//         eval(a + b)
+//     }else if(operators = '-'){
+//         eval(a-b)
+//     }else if(operators = '/'){
+//         eval(a/b)
+//     }else if(operators = '*'){
+//         eval(a*b)
+//     // } updateScreen()
+    }
